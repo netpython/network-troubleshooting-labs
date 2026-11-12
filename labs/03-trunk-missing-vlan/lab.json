@@ -1,0 +1,36 @@
+{
+  "slug": "03-trunk-missing-vlan",
+  "title": "A working host loses access after a trunk change",
+  "level": "Foundation",
+  "minutes": 20,
+  "nodes": {
+    "SW1": "IOSvL2 switch",
+    "SW2": "IOSvL2 switch",
+    "PC1": "VPCS",
+    "PC2": "VPCS"
+  },
+  "links": [
+    [
+      "PC1",
+      "eth0",
+      "SW1",
+      "Gi0/1",
+      "access VLAN 20"
+    ],
+    [
+      "SW1",
+      "Gi0/0",
+      "SW2",
+      "Gi0/0",
+      "802.1Q trunk"
+    ],
+    [
+      "SW2",
+      "Gi0/1",
+      "PC2",
+      "eth0",
+      "access VLAN 20"
+    ]
+  ],
+  "fault_device": "SW1"
+}

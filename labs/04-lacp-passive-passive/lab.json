@@ -1,0 +1,43 @@
+{
+  "slug": "04-lacp-passive-passive",
+  "title": "EtherChannel members never form a bundle",
+  "level": "Intermediate",
+  "minutes": 25,
+  "nodes": {
+    "SW1": "IOSvL2 switch",
+    "SW2": "IOSvL2 switch",
+    "PC1": "VPCS",
+    "PC2": "VPCS"
+  },
+  "links": [
+    [
+      "SW1",
+      "Gi0/0",
+      "SW2",
+      "Gi0/0",
+      "LACP member 1"
+    ],
+    [
+      "SW1",
+      "Gi0/1",
+      "SW2",
+      "Gi0/1",
+      "LACP member 2"
+    ],
+    [
+      "PC1",
+      "eth0",
+      "SW1",
+      "Gi0/2",
+      "access VLAN 20"
+    ],
+    [
+      "PC2",
+      "eth0",
+      "SW2",
+      "Gi0/2",
+      "access VLAN 20"
+    ]
+  ],
+  "fault_device": "SW1"
+}

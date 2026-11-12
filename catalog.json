@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "01-ospf-exstart",
+    "title": "OSPF neighbors stuck in EXSTART",
+    "level": "Intermediate",
+    "minutes": 25
+  },
+  {
+    "slug": "02-bgp-missing-prefix",
+    "title": "BGP is established but a prefix is missing",
+    "level": "Intermediate",
+    "minutes": 25
+  },
+  {
+    "slug": "03-trunk-missing-vlan",
+    "title": "A working host loses access after a trunk change",
+    "level": "Foundation",
+    "minutes": 20
+  },
+  {
+    "slug": "04-lacp-passive-passive",
+    "title": "EtherChannel members never form a bundle",
+    "level": "Intermediate",
+    "minutes": 25
+  },
+  {
+    "slug": "05-return-traffic-acl",
+    "title": "The request is permitted but the reply is dropped",
+    "level": "Intermediate",
+    "minutes": 30
+  },
+  {
+    "slug": "06-floating-static-route",
+    "title": "A backup static route wins over the primary",
+    "level": "Intermediate",
+    "minutes": 30
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "slug": "05-return-traffic-acl",
+  "title": "The request is permitted but the reply is dropped",
+  "level": "Intermediate",
+  "minutes": 30,
+  "nodes": {
+    "R1": "IOSv / IOS XE router",
+    "R2": "IOSv / IOS XE router"
+  },
+  "links": [
+    [
+      "R1",
+      "Gi0/0",
+      "R2",
+      "Gi0/0",
+      "10.0.12.0/30"
+    ]
+  ],
+  "fault_device": "R1"
+}

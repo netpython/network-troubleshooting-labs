@@ -1,0 +1,28 @@
+{
+  "slug": "06-floating-static-route",
+  "title": "A backup static route wins over the primary",
+  "level": "Intermediate",
+  "minutes": 30,
+  "nodes": {
+    "R1": "IOSv / IOS XE router",
+    "R2": "IOSv / IOS XE router",
+    "R3": "IOSv / IOS XE router"
+  },
+  "links": [
+    [
+      "R1",
+      "Gi0/0",
+      "R2",
+      "Gi0/0",
+      "10.0.12.0/30 primary"
+    ],
+    [
+      "R1",
+      "Gi0/1",
+      "R3",
+      "Gi0/0",
+      "10.0.13.0/30 backup"
+    ]
+  ],
+  "fault_device": "R1"
+}
