@@ -1,10 +1,10 @@
 # Network Troubleshooting Labs
 
-**Six Cisco IOS and IOS XE incidents to build diagnostic reasoning.**
+**Seven Cisco IOS and IOS XE incidents to build diagnostic reasoning.**
 
 Start with a broken network, gather evidence, make a minimal correction, and prove that forwarding or protocol state has recovered.
 
-`6 incidents` · `PNETLab / EVE-NG` · `Initial and fixed configurations` · `Progressive hints`
+`7 incidents` · `PNETLab / EVE-NG` · `Initial and fixed configurations` · `Progressive hints`
 
 ## Choose an incident
 
@@ -16,8 +16,9 @@ Start with a broken network, gather evidence, make a minimal correction, and pro
 | [04 · LACP passive/passive](labs/04-lacp-passive-passive/README.md) | Physical links are up but the bundle never forms | LACP modes, member state, port channels | 25 min |
 | [05 · Return traffic ACL](labs/05-return-traffic-acl/README.md) | The request leaves but its reply is dropped | ACL direction, ICMP types, counters | 30 min |
 | [06 · Backup route preferred](labs/06-floating-static-route/README.md) | A healthy primary path loses to a broken standby | Administrative distance, RIB, CEF | 30 min |
+| [07 · No OSPF neighbor on a working link](labs/07-ospf-passive-transit/README.md) | Transit pings succeed but no adjacency forms | Passive interfaces, Hellos, return path | 25 min |
 
-Times are estimates. The last two labs use a stateless IOS ACL and static routing to practice packet-path reasoning.
+Times are estimates. Labs 05 and 06 use a stateless IOS ACL and static routing to practice packet-path reasoning.
 
 ## Start here
 

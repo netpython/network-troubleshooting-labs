@@ -1,0 +1,20 @@
+{
+  "slug": "07-ospf-passive-transit",
+  "title": "No OSPF neighbor on a working transit link",
+  "level": "Foundation",
+  "minutes": 25,
+  "nodes": {
+    "R1": "IOSv / IOS XE router",
+    "R2": "IOSv / IOS XE router"
+  },
+  "links": [
+    [
+      "R1",
+      "Gi0/0",
+      "R2",
+      "Gi0/0",
+      "10.0.12.0/30"
+    ]
+  ],
+  "fault_device": "R1"
+}
